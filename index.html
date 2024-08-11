@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>js/jq</title>
+   
+    <!--css links-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+  </head>
+  <body>
+    <div>
+     <!-- ex 1 -->
+      <h2 class="text-danger">click the button to show the text</h2>
+      <button type="button" class="btn btn-dark" onclick="showText()">
+        show text
+      </button>
+      <h3 id="s_text"></h3>
+<hr>
+      <!-- ex 2-->
+      <h2 class="text-danger">click the button to show the date</h2>
+      <button type="button" class="btn btn-dark" onclick="showDate()">
+        show Date
+      </button>
+      <h3 id="s_Date"></h3>
+      <hr>
+      <!-- ex 3-->
+      <button type="button" class="btn btn-dark" onclick="bulbon()">
+        bulb on 
+      </button>
+      <img id="img" src="images/bulboff.gif" alt="">
+      <button type="button" class="btn btn-dark" onclick="bulboff()">
+        bulb off
+      </button>
+      <hr>
+      <!-- ex 4-->
+      <h2>click to see the emotion of bangladeshi people</h2>
+      <button type="button" class="btn btn-dark" onclick="showSad()">before 5 aug</button>
+      <img src="images/emoji.webp" alt="" id="s_img">
+      <button type="button" class="btn btn-dark" onclick="showHappy()">after 5 aug</button>
+      <hr>
+
+      <!-- ex 5-->
+      <h2>click to change the color of the text</h2>
+      <button type="button" class="btn btn-dark" onclick="changeColor()">
+        change color 
+      </button>
+      <h3 id="color">MY name is Tarikul Islam</h3>
+
+      <hr>
+
+      <!-- ex 6-->
+      <h2>click to see the ans of the question</h2>
+      <button type="button" class="btn btn-dark" onclick="showQus()">Question</button>
+     <h3 id="a_text">What is your country name? Where are you from?</h3>
+      <button type="button" class="btn btn-dark" onclick="showAns()">Answer</button>
+      <hr>
+      <!-- ex 7 -->
+       <h2>click to change the size of the text</h2>
+      <button type="button" class="btn btn-dark" onclick="changeSize()">
+        change Size 
+      </button>
+      <h3 id="Size">MY name is Tarikul Islam</h3>
+
+      <hr>
+
+      <!-- ex 8 -->
+        <h2>click to change the background color of the text</h2>
+      <button type="button" class="btn btn-dark" onclick="changeBackground()">
+        change Backgound 
+      </button>
+      <h3 id="css">I am Bangladeshi</h3>
+
+      <hr> 
+       <!-- ex 9-->
+        <h2>click to hide of the text</h2>
+      <button type="button" class="btn btn-dark" onclick="hideText()">
+        Hide Text 
+      </button>
+      <h3 id="hide">I am Bangladeshi</h3>
+
+      <hr> 
+      <!-- ex 10-->
+        <h2>click to show of the text</h2>
+      <button type="button" class="btn btn-dark" onclick="showText()">
+        Show Text 
+      </button>
+      <p id="demo" style="display:none">Hello JavaScript!</p>
+
+
+      <hr> 
+     <!-- ex 11-->
+        <h2>click to show and hide of the text</h2>
+      <button type="button" class="btn btn-dark" onclick="hideText()">
+        Hide Text 
+      </button>
+      <button type="button" class="btn btn-dark" onclick="ShowText()">
+        Show Text 
+      </button>
+      <h3 id="hiden">I am Bangladeshi</h3>
+
+      <hr> 
+      
+      
+
+    <!-- ex 12-->
+    <h2 class="text-danger">Click the button to show the lowest value in a list of arguments</h2>
+    <button class="btn btn-dark" onclick="s_lo()">Show</button>
+    <h3 id="lo_m">0, 150, 30, 20, -8, -200</h3>
+ <!-- ex 13 -->
+     <hr>
+     <h2 class="text-danger">Click the button to show the highest value in a list of arguments</h2>
+    <button class="btn btn-dark" onclick="m_hi()">Show</button>
+    <h3 id="hi_m">0, 150, 30, 20, -8, -200</h3>
+    </div>
+<hr>
+
+    <!-- ex 14 -->
+    <h2>click to see the value</h2>
+      <button type="button" class="btn btn-dark" onclick="cheekValue()">
+        see Value 
+      </button>
+      <h3 id="value">The value</h3>
+      <hr>
+      <!-- ex 15 -->
+
+      <h2>click to see the value</h2>
+      <button type="button" class="btn btn-dark" onclick="Value()">
+        see Value 
+      </button>
+      <h3 id="value1">The value</h3>
+      <hr>
+
+       <!-- ex 16 -->
+
+      <h2>click to see the value</h2>
+      <button type="button" class="btn btn-dark" onclick="seeValue()">
+        see Value 
+      </button>
+      <h3 id="value2">The value</h3>
+      <hr>
+
+       <!-- ex 17 -->
+       <h2 class="text-danger">Click the button to see rounded up (floor) to nearest integer</h2>
+    <button class="btn btn-dark" onclick="m_floor()">Show</button>
+    <h3 id="floor">Floor of 4.6</h3>
+
+     <!-- ex 18 -->
+     <h2 class="text-danger">Click the button to see rounded down (ceil) to nearest integer</h2>
+    <button class="btn btn-dark" onclick="m_ceil()">Show</button>
+    <h3 id="ceil">Ceil of 4.6</h3>
+
+  <hr>
+  <!-- ex 19 -->
+  <h2 class="terxt-danger">Click the button to see rounded (ceil) to nearest intege</h2>
+    <button class="btn btn-dark" onclick="m_round()">Show</button>
+    <h3 id="round">Round of 4.6</h3>
+    <hr>
+    <!-- ex 20 -->
+    <h2 class="text-danger">Click the button to see the value of PI</h2>
+    <button class="btn btn-dark" onclick="m_pi()">See</button>
+    <h3 id="pi">PI</h3>
+
+    <hr>
+    <!-- ex 21 -->
+    <h2 class="text-danger">Click the button to sorts the array in  descending order</h2>
+    <button class="btn btn-dark" onclick="reverseSortArray()">Sort</button>
+    <h3 id="reso_a">fruits = ["Banana", "Orange", "Apple", "Mango"]</h3> <hr>
+    <!-- ex 22-->
+    <h2 class="text-danger">Click the button to see the number is Int or not</h2>
+    <button class="btn btn-dark" onclick="is_Int()">See</button>
+    <h3 id="i1_i">10</h3>
+<hr>
+<!-- ex 23 -->
+    <h2 class="text-danger">Click the button to convert variables to numbers</h2>
+    <button class="btn btn-dark" onclick="varConvert()">Convert</button>
+    <h3 id="v_c">john</h3>
+
+
+    <hr>
+<!-- ex 24 -->
+    <h2 class="text-danger">Declaring a constant array does NOT make the elements unchangeable</h2>
+    <button class="btn btn-dark" onclick="Convert()">Convert</button>
+    <h3 id="c">cars = ["Saab", "Volvo", "BMW"]</h3>
+<hr>
+    <!-- ex 25 -->
+    <h2 class="text-danger">Declaring a constant object does NOT make the objects properties unchangeable</h2>
+    <button class="btn btn-dark" onclick="Convert1()">Convert</button>
+    <h3 id="car">car = {type:"Fiat", model:"500", color:"white"}</h3>
+
+    <hr>
+    <!-- ex 26 -->
+    <h2 class="text-danger">Click the button to see the number is Int or not</h2>
+    <button class="btn btn-dark" onclick="is_Int1()">See</button>
+    <h3 id="i2_i">10.5</h3>
+    <!-- ex 27 -->
+    
+
+    <!--script links-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
